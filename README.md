@@ -220,7 +220,7 @@ export class AppModule {}
 
 ## Roadmap
 
-- [x] Compatible with **NestJS ^9**
+- [x] Compatible with **NestJS ^10**
 - [ ] Flexible custom logger
 - [ ] Add some examples for **TLS**
 

@@ -1,8 +1,8 @@
 {
   "name": "@songkeys/nestjs-redis",
-  "version": "9.0.5",
+  "version": "10.0.0",
   "description": "Redis(ioredis) module for Nest framework (node.js).",
-  "author": "LiaoLiao <yxiaosong002@gmail.com>",
+  "author": "Songkeys <songv587@gmail.com>",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -38,11 +38,11 @@
     "publish:rc": "npm publish --tag rc"
   },
   "dependencies": {
-    "tslib": "2.4.1"
+    "tslib": "2.6.0"
   },
   "peerDependencies": {
-    "@nestjs/common": "^9.0.0",
-    "@nestjs/core": "^9.0.0",
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
     "ioredis": "^5.0.0"
   },
   "engines": {
