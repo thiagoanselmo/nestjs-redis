@@ -12,8 +12,8 @@ $ npm install --save @nestjs/terminus
 // app.module.ts
 import { Module } from '@nestjs/common';
 import { TerminusModule } from '@nestjs/terminus';
-import { RedisModule } from '@liaoliaots/nestjs-redis';
-import { RedisHealthModule } from '@liaoliaots/nestjs-redis/health';
+import { RedisModule } from '@songkeys/nestjs-redis';
+import { RedisHealthModule } from '@songkeys/nestjs-redis/health';
 import { AppController } from './app.controller';
 
 @Module({
@@ -44,8 +44,8 @@ export class AppModule {}
 // app.controller.ts
 import { Controller, Get } from '@nestjs/common';
 import { HealthCheckService, HealthCheck, HealthCheckResult } from '@nestjs/terminus';
-import { InjectRedis } from '@liaoliaots/nestjs-redis';
-import { RedisHealthIndicator } from '@liaoliaots/nestjs-redis/health';
+import { InjectRedis } from '@songkeys/nestjs-redis';
+import { RedisHealthIndicator } from '@songkeys/nestjs-redis/health';
 import Redis from 'ioredis';
 
 @Controller()
