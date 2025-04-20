@@ -20,9 +20,9 @@
     <a href="#usage"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/songkeys/nestjs-redis/issues">Report Bug</a>
+    <a href="https://github.com/thiagoanselmo/nestjs-redis/issues">Report Bug</a>
     ·
-    <a href="https://github.com/songkeys/nestjs-redis/issues">Request Feature</a>
+    <a href="https://github.com/thiagoanselmo/nestjs-redis/issues">Request Feature</a>
   </p>
 </div>
 
@@ -68,17 +68,17 @@
 
 ### Prerequisites
 
-This lib requires **Node.js >=12.22.0**, **NestJS ^9.0.0**, **ioredis ^5.0.0**.
+This lib requires **Node.js >=20.0.0**, **NestJS ^11.0.0**, **ioredis ^5.6.1**.
 
 ### Installation
 
 ```sh
 # with npm
-npm install @nestjs/terminus @songkeys/nestjs-redis-health ioredis
+npm install @nestjs/terminus @thiagoanselmo/nestjs-redis-health ioredis
 # with yarn
-yarn add @nestjs/terminus @songkeys/nestjs-redis-health ioredis
+yarn add @nestjs/terminus @thiagoanselmo/nestjs-redis-health ioredis
 # with pnpm
-pnpm add @nestjs/terminus @songkeys/nestjs-redis-health ioredis
+pnpm add @nestjs/terminus @thiagoanselmo/nestjs-redis-health ioredis
 ```
 
 ## Usage
@@ -89,7 +89,7 @@ pnpm add @nestjs/terminus @songkeys/nestjs-redis-health ioredis
 // app.module.ts
 import { Module } from '@nestjs/common';
 import { TerminusModule } from '@nestjs/terminus';
-import { RedisHealthModule } from '@songkeys/nestjs-redis-health';
+import { RedisHealthModule } from '@thiagoanselmo/nestjs-redis-health';
 import { AppController } from './app.controller';
 
 @Module({
@@ -105,7 +105,7 @@ export class AppModule {}
 // app.controller.ts
 import { Controller, Get } from '@nestjs/common';
 import { HealthCheckService, HealthCheck, HealthCheckResult } from '@nestjs/terminus';
-import { RedisHealthIndicator } from '@songkeys/nestjs-redis-health';
+import { RedisHealthIndicator } from '@thiagoanselmo/nestjs-redis-health';
 import Redis from 'ioredis';
 
 @Controller()
@@ -171,14 +171,14 @@ export class AppController {
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-[npm-shield]: https://img.shields.io/npm/v/@songkeys/nestjs-redis-health/latest?style=for-the-badge
-[npm-url]: https://www.npmjs.com/package/@songkeys/nestjs-redis-health
-[downloads-shield]: https://img.shields.io/npm/dm/@songkeys/nestjs-redis-health?style=for-the-badge
-[downloads-url]: https://www.npmjs.com/package/@songkeys/nestjs-redis-health
-[stars-shield]: https://img.shields.io/github/stars/songkeys/nestjs-redis?style=for-the-badge
-[stars-url]: https://github.com/songkeys/nestjs-redis/stargazers
-[issues-shield]: https://img.shields.io/github/issues/songkeys/nestjs-redis?style=for-the-badge
-[issues-url]: https://github.com/songkeys/nestjs-redis/issues
-[license-shield]: https://img.shields.io/npm/l/@songkeys/nestjs-redis?style=for-the-badge
-[license-url]: https://github.com/songkeys/nestjs-redis/blob/main/LICENSE
-[vulnerabilities-shield]: https://img.shields.io/snyk/vulnerabilities/npm/@songkeys/nestjs-redis-health?style=for-the-badge
+[npm-shield]: https://img.shields.io/npm/v/@thiagoanselmo/nestjs-redis-health/latest?style=for-the-badge
+[npm-url]: https://www.npmjs.com/package/@thiagoanselmo/nestjs-redis-health
+[downloads-shield]: https://img.shields.io/npm/dm/@thiagoanselmo/nestjs-redis-health?style=for-the-badge
+[downloads-url]: https://www.npmjs.com/package/@thiagoanselmo/nestjs-redis-health
+[stars-shield]: https://img.shields.io/github/stars/thiagoanselmo/nestjs-redis?style=for-the-badge
+[stars-url]: https://github.com/thiagoanselmo/nestjs-redis/stargazers
+[issues-shield]: https://img.shields.io/github/issues/thiagoanselmo/nestjs-redis?style=for-the-badge
+[issues-url]: https://github.com/thiagoanselmo/nestjs-redis/issues
+[license-shield]: https://img.shields.io/npm/l/@thiagoanselmo/nestjs-redis?style=for-the-badge
+[license-url]: https://github.com/thiagoanselmo/nestjs-redis/blob/main/LICENSE
+[vulnerabilities-shield]: https://img.shields.io/snyk/vulnerabilities/npm/@thiagoanselmo/nestjs-redis-health?style=for-the-badge

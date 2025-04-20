@@ -23,9 +23,9 @@
     <br />
     <a href="/sample">View Demos</a>
     ·
-    <a href="https://github.com/songkeys/nestjs-redis/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/thiagoanselmo/nestjs-redis/issues/new/choose">Report Bug</a>
     ·
-    <a href="https://github.com/songkeys/nestjs-redis/issues">Request Feature</a>
+    <a href="https://github.com/thiagoanselmo/nestjs-redis/issues">Request Feature</a>
   </p>
 </div>
 
@@ -76,20 +76,17 @@
 
 ### Prerequisites
 
-This lib requires **Node.js >=12.22.0**, **NestJS ^10.0.0**, **ioredis ^5.0.0**.
-
-- If you depend on **ioredis 4**, please use [version 7](https://github.com/songkeys/nestjs-redis/tree/v7.0.0) of the lib.
-- If you depend on **ioredis 5**, **NestJS 7** or **8**, please use [version 8](https://github.com/songkeys/nestjs-redis/tree/v8.2.2) of the lib.
+This lib requires **Node.js >=20.0.0**, **NestJS ^11.0.0**, **ioredis ^5.6.1**.
 
 ### Installation
 
 ```sh
 # with npm
-npm install @songkeys/nestjs-redis ioredis
+npm install @thiagoanselmo/nestjs-redis ioredis
 # with yarn
-yarn add @songkeys/nestjs-redis ioredis
+yarn add @thiagoanselmo/nestjs-redis ioredis
 # with pnpm
-pnpm add @songkeys/nestjs-redis ioredis
+pnpm add @thiagoanselmo/nestjs-redis ioredis
 ```
 
 ## Usage
@@ -152,7 +149,7 @@ Examples of code:
 ```ts
 // redis-config.service.ts
 import { Injectable } from '@nestjs/common';
-import { RedisModuleOptions, RedisOptionsFactory } from '@songkeys/nestjs-redis';
+import { RedisModuleOptions, RedisOptionsFactory } from '@thiagoanselmo/nestjs-redis';
 
 @Injectable()
 export class RedisConfigService implements RedisOptionsFactory {
@@ -174,7 +171,7 @@ export class RedisConfigService implements RedisOptionsFactory {
 ```ts
 // app.module.ts
 import { Module } from '@nestjs/common';
-import { RedisModule } from '@songkeys/nestjs-redis';
+import { RedisModule } from '@thiagoanselmo/nestjs-redis';
 import { RedisConfigService } from './redis-config.service';
 
 @Module({
@@ -192,7 +189,7 @@ export class AppModule {}
 ```ts
 // my-redis.module.ts
 import { Module } from '@nestjs/common';
-import { RedisModule } from '@songkeys/nestjs-redis';
+import { RedisModule } from '@thiagoanselmo/nestjs-redis';
 import { RedisConfigService } from './redis-config.service';
 
 @Module({
@@ -248,16 +245,16 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - [Official Redis Docker Image](https://hub.docker.com/_/redis)
 - [Official Bitnami Redis Docker Image](https://hub.docker.com/r/bitnami/redis)
 
-[npm-shield]: https://img.shields.io/npm/v/@songkeys/nestjs-redis/latest?style=for-the-badge
-[npm-url]: https://www.npmjs.com/package/@songkeys/nestjs-redis
-[downloads-shield]: https://img.shields.io/npm/dm/@songkeys/nestjs-redis?style=for-the-badge
-[downloads-url]: https://www.npmjs.com/package/@songkeys/nestjs-redis
-[stars-shield]: https://img.shields.io/github/stars/songkeys/nestjs-redis?style=for-the-badge
-[stars-url]: https://github.com/songkeys/nestjs-redis/stargazers
-[issues-shield]: https://img.shields.io/github/issues/songkeys/nestjs-redis?style=for-the-badge
-[issues-url]: https://github.com/songkeys/nestjs-redis/issues
-[license-shield]: https://img.shields.io/npm/l/@songkeys/nestjs-redis?style=for-the-badge
-[license-url]: https://github.com/songkeys/nestjs-redis/blob/main/LICENSE
-[vulnerabilities-shield]: https://img.shields.io/snyk/vulnerabilities/npm/@songkeys/nestjs-redis?style=for-the-badge
-[workflow-shield]: https://img.shields.io/github/actions/workflow/status/songkeys/nestjs-redis/testing.yaml?label=TESTING&style=for-the-badge
-[workflow-url]: https://github.com/songkeys/nestjs-redis/actions/workflows/testing.yaml
+[npm-shield]: https://img.shields.io/npm/v/@thiagoanselmo/nestjs-redis/latest?style=for-the-badge
+[npm-url]: https://www.npmjs.com/package/@thiagoanselmo/nestjs-redis
+[downloads-shield]: https://img.shields.io/npm/dm/@thiagoanselmo/nestjs-redis?style=for-the-badge
+[downloads-url]: https://www.npmjs.com/package/@thiagoanselmo/nestjs-redis
+[stars-shield]: https://img.shields.io/github/stars/thiagoanselmo/nestjs-redis?style=for-the-badge
+[stars-url]: https://github.com/thiagoanselmo/nestjs-redis/stargazers
+[issues-shield]: https://img.shields.io/github/issues/thiagoanselmo/nestjs-redis?style=for-the-badge
+[issues-url]: https://github.com/thiagoanselmo/nestjs-redis/issues
+[license-shield]: https://img.shields.io/npm/l/@thiagoanselmo/nestjs-redis?style=for-the-badge
+[license-url]: https://github.com/thiagoanselmo/nestjs-redis/blob/main/LICENSE
+[vulnerabilities-shield]: https://img.shields.io/snyk/vulnerabilities/npm/@thiagoanselmo/nestjs-redis?style=for-the-badge
+[workflow-shield]: https://img.shields.io/github/actions/workflow/status/thiagoanselmo/nestjs-redis/testing.yaml?label=TESTING&style=for-the-badge
+[workflow-url]: https://github.com/thiagoanselmo/nestjs-redis/actions/workflows/testing.yaml
